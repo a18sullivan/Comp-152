@@ -9,7 +9,7 @@ public class main{
     public static void main(String[] args)throws IOException{
         var fileName = "students.txt";
         String all_names = Files.readString(Paths.get(fileName));
-        String[] name_list = all_names.split( "\n");
+        String[] name_list = all_names.split( "\r\n");
         var numberOfStudents = name_list.length;
         var randGenerator = new Random();
         var num=randGenerator.nextInt(numberOfStudents);
